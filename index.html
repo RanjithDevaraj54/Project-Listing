@@ -49,13 +49,28 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Listing Details</a>
+                <a class="dropdown-item" href="./index.html">Listing Details</a>
                 <a class="dropdown-item" href="#">Referral Details</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Logout</a>
               </div>
             </li>
           </ul>
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="text-align: justify;">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Every Day is a Good Beginning !</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  Successfully Logged Out
+                </div>
+              </div>
+            </div>
+          </div>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
@@ -74,24 +89,28 @@
       <div class="row">
         <div class="col-sm-3 ">
           <div class="card d-flex">
-            <img class="card-img" src="./1.jpg"  alt="Card image cap">
-            <div class="card-img-overlay" style="font-family: Bebas Neue;">
-              <div class="card-header">
-                .
+            <a href="./hotel.html">
+              <img class="card-img" src="./1.jpg"  alt="Card image cap">
+              <div class="card-img-overlay" style="font-family: Bebas Neue;">
+                <div class="card-header">
+                  .
+                </div>
+                <h5 class="card-text text-center" style="color: #FADB0F;">H o t e l s</h5>
               </div>
-              <h5 class="card-text text-center" style="color: #FADB0F;">H o t e l s</h5>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="card d-flex">
-            <img class="card-img" src="./2.jpg"  alt="Card image cap">
-            <div class="card-img-overlay" style="font-family: Bebas Neue;">
-              <div class="card-header">
-                .
+            <a href="./restaurant.html">
+              <img class="card-img" src="./2.jpg"  alt="Card image cap">
+              <div class="card-img-overlay" style="font-family: Bebas Neue;">
+                <div class="card-header">
+                  .
+                </div>
+                <h5 class="card-text text-center" style="color: #FADB0F;">R e s t a u r a n t </h5>
               </div>
-              <h5 class="card-text text-center" style="color: #FADB0F;">R e s t a u r a n t </h5>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-sm-3">
@@ -217,7 +236,7 @@
       <div>
        <img src="" alt="">
       </div>
-
+      
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
