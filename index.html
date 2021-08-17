@@ -14,14 +14,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Listing Site</title>
+    <title>X-LISTING</title>
   </head>
   <style>
     a, a:hover, a:focus, a:active {
       text-decoration: none;
       color: inherit;
  }
-  
+ footer {
+  background: #16222A;
+  background:black;
+  background: #151418;
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #E88873;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
     </style>
   <body style="background-color: #E88873;">
 <!--=============Navbar Content===================-->
@@ -48,7 +156,7 @@
                 Users Panel
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="./profile.html">Profile</a>
                 <a class="dropdown-item" href="./index.html">Listing Details</a>
                 <a class="dropdown-item" href="#">Referral Details</a>
                 <div class="dropdown-divider"></div>
@@ -197,7 +305,7 @@
        <h2 class="text-center mt-4" style="font-family: poppins; color: white;"><span style="color: black;">--</span> Famous in City <span style="color: Black;"> --</span></h2>
      </div>
 <!--================COROUSEL PLACE=========================-->
-      <div class="container">
+  <div class="mt-4">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -233,11 +341,118 @@
           </a>
         </div>
       </div>
-      <div>
-       <img src="" alt="">
+</div>
+<!--================Smonething New part 2=========================-->
+<div class="container">
+  <h2 class="text-center mt-5" style="font-family: poppins; color: white;"><span style="color: black;">--</span> Today Special <span style="color: Black;"> --</span></h2>
+</div>
+<div class="container mt-5" style="font-family: poppins;">
+  <div class="card-deck">
+    <div class="card text-white bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="font-family: Bebas neue; font-size: x-large; color: #FADB0F;">HackerJack 1.0</h5>
+        <p class="card-text">This is a Event part of BIT-Techfest <br>Registrations are open from today<br>Win Exciting cash prizes</p>
       </div>
-      
+    </div>
+    <div class="card text-white bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="font-family: Bebas neue; font-size: x-large; color: #FADB0F;">Free Lunch ?</h5>
+        <p class="card-text">Hotel Dreams is offering Free Lunch<br>Only for Today<br>Hotel completes its 12 Years</p>
+      </div>
+    </div>
+    <div class="card text-white bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="font-family: Bebas neue; font-size: x-large;  color: #FADB0F;">New Job!</h5>
+        <p class="card-text">Rewards Team is looking for freshers<br>For the Posistion of Web Developer<br>Good Luck for all participants!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--==================SUBSCRIBE====================-->
+<div class="bg-dark p-2 mt-5 container rounded text-center">
+  <h5 class="mt-2" style="color: white; font-family: poppins;">Subscribe to our Newsletters</h5>
+  <div class="row justify-content-center">
+    <div class="col-md-4 order-md-2 mb-3 mt-3">
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Email-Id">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenterg" >Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalCenterg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align: justify;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: bebas neue;">Thanks For Subscribing !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center" style="font-family: poppins;">
+        You will Recieve Our Regular Updates
+      </div>
+    </div>
+  </div>
+</div>
+<!--=======================FOOTER PART===================-->
+<footer class="mainfooter" role="contentinfo" style="font-family: poppins;">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 style="font-family: Bebas neue;">Useful Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
     
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4 style="font-family: bebas neue;">OTHER LINKS</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Parks and Recreation</a></li>
+            <li><a href="#">Public Works</a></li>
+            <li><a href="#">Police Station</a></li>
+            <li><a href="#">Fire Station</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="far fa-envelope"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row mt-2">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2021 - X-Listing.  All rights reserved.</p>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
