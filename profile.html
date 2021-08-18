@@ -1,312 +1,347 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Listing Site</title>
-  </head>
-  <style>
-    a, a:hover, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
- }
- .card {
-      overflow: hidden;
-    }
-    
-    .card-block .rotate {
-      z-index: 8;
-      float: right;
-      height: 100%;
-    }
-    
-    .card-block .rotate i {
-      color: rgba(20, 20, 20, 0.15);
-      position: absolute;
-      left: 0;
-      left: auto;
-      right: -10px;
-      bottom: 0;
-      display: block;
-      -webkit-transform: rotate(-44deg);
-      -moz-transform: rotate(-44deg);
-      -o-transform: rotate(-44deg);
-      -ms-transform: rotate(-44deg);
-      transform: rotate(-44deg);
-    }
-    footer {
-  background: #16222A;
-  background:black;
-  background: #151418;
-  color: white;
-  margin-top:100px;
-}
 
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
+<head>
+  <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/3408/3408591.png" type="image/x-icon">
+  <meta name="theme-color" content="#E88873">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+<style>
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
 
-footer a:hover {
-  color: #E88873;
-  text-decoration: none;
-}
+  .card {
+    overflow: hidden;
+  }
 
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
+  .card-block .rotate {
+    z-index: 8;
+    float: right;
+    height: 100%;
+  }
 
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
+  .card-block .rotate i {
+    color: rgba(20, 20, 20, 0.15);
+    position: absolute;
+    left: 0;
+    left: auto;
+    right: -10px;
+    bottom: 0;
+    display: block;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+  }
 
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
+  footer {
+    background: #16222A;
+    background: black;
+    background: #151418;
+    color: white;
+    margin-top: 100px;
+  }
 
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+
+  footer a:hover {
+    color: #E88873;
+    text-decoration: none;
+  }
+
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
 
 
-/* footer social icons */
+  /* footer social icons */
 
-.social-network a.icoFacebook:hover {
-  background-color: #3B5998;
-}
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
 
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
-}
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
 
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i {
+    color: #fff;
+  }
 
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #44BCDD;
-}
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
 
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
 
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
 
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
 
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
 
-.social-network a {
-  background-color: #F9F9F9;
-}
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+</style>
 
-    </style>
-  <body style="background-color: #E88873;">
-<!--=============Navbar Content===================-->
-    <div style="font-family: Bebas Neue,Verdana; font-size: large;">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Offers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Listings</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Users Panel
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="./index.html">Listing Details</a>
-                <a class="dropdown-item" href="#">Referral Details</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Logout</a>
+<body style="background-color: #E88873;">
+  <!--=============Navbar Content===================-->
+  <div style="font-family: Bebas Neue,Verdana; font-size: large;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Listings</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Users Panel
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./profile.html">Profile</a>
+              <a class="dropdown-item" href="./index.html">Listing Details</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: justify;">
+                <h5 class="modal-title" id="exampleModalLongTitle">Every Day is a Good Beginning !</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-          </form>
-          <form class="form-inline my-2 my-lg-0 mx-2">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <a href="./loginform.html">Sign In</a></button>
-          </form>
+              <div class="modal-body text-center">
+                Successfully Logged Out
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <form class="form-inline my-2 my-lg-0 mx-2">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <a href="./loginform.html">Sign
+              In</a></button>
+        </form>
+      </div>
+    </nav>
+  </div>
 
-<!--================test part====== justify-content-center align-items-center===========-->
-<div class="container text-center mt-3 bg-dark pt-3 pb-1 rounded">
-  <h6 style="color: #FADB0F; font-family: bebas neue; font-size:xx-large;">Dashboard</h6>
-</div>
-<div class="container mt-5" style="font-family: poppins;">
-<div class="row mb-3">
-  <div class="col-xl-3 col-lg-6">
-    <div class="card card-inverse card-success">
-      <div class="card-block bg-success">
-        <div class="rotate">
-          <i class="fa fa-user fa-5x"></i>
+  <!--================test part====== justify-content-center align-items-center===========-->
+  <div class="container text-center mt-3 bg-dark pt-3 pb-1 rounded">
+    <h6 style="color: #FADB0F; font-family: bebas neue; font-size:xx-large;">Dashboard</h6>
+  </div>
+  <div class="container mt-5" style="font-family: poppins;">
+    <div class="row mb-3">
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-inverse card-success">
+          <div class="card-block bg-success">
+            <div class="rotate">
+              <i class="fa fa-user fa-5x"></i>
+            </div>
+            <h6 class="text-uppercase text-center mt-2">User Log In</h6>
+            <h1 class="display-1 text-center" style="font-family: bebas neue;">5</h1>
+          </div>
         </div>
-        <h6 class="text-uppercase text-center mt-2">User Log In</h6>
-        <h1 class="display-1 text-center" style="font-family: bebas neue;">5</h1>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-inverse card-danger">
+          <div class="card-block bg-danger">
+            <div class="rotate">
+              <i class="fa fa-list fa-4x"></i>
+            </div>
+            <h6 class="text-uppercase text-center mt-2">Listing Added</h6>
+            <h1 class="display-1 text-center" style="font-family: bebas neue;">36</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-inverse card-info">
+          <div class="card-block bg-info">
+            <div class="rotate">
+              <i class="fas fa-pause-circle fa-5x"></i>
+            </div>
+            <h6 class="text-uppercase text-center mt-2">Pending for Approval</h6>
+            <h1 class="display-1 text-center" style="font-family: bebas neue;">12</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-inverse card-warning">
+          <div class="card-block bg-warning">
+            <div class="rotate">
+              <i class="fa fa-share fa-5x"></i>
+            </div>
+            <h6 class="text-uppercase text-center mt-2">Growth</h6>
+            <h1 class="display-1 text-center" style="font-family: bebas neue;">36%</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-xl-3 col-lg-6">
-    <div class="card card-inverse card-danger">
-      <div class="card-block bg-danger">
-        <div class="rotate">
-          <i class="fa fa-list fa-4x"></i>
-        </div>
-        <h6 class="text-uppercase text-center mt-2">Listing Added</h6>
-        <h1 class="display-1 text-center" style="font-family: bebas neue;">36</h1>
-      </div>
-    </div>
-  </div>
-  <div class="col-xl-3 col-lg-6">
-    <div class="card card-inverse card-info">
-      <div class="card-block bg-info">
-        <div class="rotate">
-          <i class="fas fa-pause-circle fa-5x"></i>
-        </div>
-        <h6 class="text-uppercase text-center mt-2">Pending for Approval</h6>
-        <h1 class="display-1 text-center" style="font-family: bebas neue;">12</h1>
-      </div>
-    </div>
-  </div>
-  <div class="col-xl-3 col-lg-6">
-    <div class="card card-inverse card-warning">
-      <div class="card-block bg-warning">
-        <div class="rotate">
-          <i class="fa fa-share fa-5x"></i>
-        </div>
-        <h6 class="text-uppercase text-center mt-2">Growth</h6>
-        <h1 class="display-1 text-center" style="font-family: bebas neue;">36%</h1>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!--=======================FOOTER PART===================-->
-<footer class="mainfooter" role="contentinfo" style="font-family: poppins;">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4 style="font-family: Bebas neue;">Useful Links</h4>
-          <ul class="list-unstyled">
-            <li><a href="#"></a></li>
-            <li><a href="#">Payment Center</a></li>
-            <li><a href="#">Contact Directory</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="#">News and Updates</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-      </div>
-    
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4 style="font-family: bebas neue;">OTHER LINKS</h4>
-          <ul class="list-unstyled">
-            <li><a href="#">Parks and Recreation</a></li>
-            <li><a href="#">Public Works</a></li>
-            <li><a href="#">Police Station</a></li>
-            <li><a href="#">Fire Station</a></li>
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    	<div class="col-md-3">
-    		<h4>Follow Us</h4>
+  <!--=======================FOOTER PART===================-->
+  <footer class="mainfooter" role="contentinfo" style="font-family: poppins;">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4 style="font-family: Bebas neue;">Useful Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#">Payment Center</a></li>
+                <li><a href="#">Contact Directory</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">News and Updates</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4 style="font-family: bebas neue;">OTHER LINKS</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Parks and Recreation</a></li>
+                <li><a href="#">Public Works</a></li>
+                <li><a href="#">Police Station</a></li>
+                <li><a href="#">Fire Station</a></li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us</h4>
             <ul class="social-network social-circle">
-             <li><a href="#" class="icoFacebook" title="Facebook"><i class="far fa-envelope"></i></a></li>
-             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-            </ul>				
-		</div>
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="far fa-envelope"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; Copyright 2021 - Ask Us ! - All rights reserved.<br>Site Designed and Developed By <br><span> <a href="https://ranjithdevaraj.netlify.app/">Ranjith Devaraj</a> </span></p>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-	<div class="row mt-2">
-		<div class="col-md-12 copy">
-			<p class="text-center">&copy; Copyright 2021 - X-Listing.  All rights reserved.</p>
-		</div>
-	</div>
-
-
-  </div>
-  </div>
-</footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
 </html>
